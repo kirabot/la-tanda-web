@@ -23,7 +23,7 @@ npx serve .
 
 Then open the local URL printed in the terminal.
 
-### Verified links
+### Helpful links
 - Swagger UI: https://latanda.online/docs
 - Dev Portal: https://latanda.online/dev-dashboard.html
 - Chain Explorer: https://exp.utsa.tech/latanda/staking
@@ -32,22 +32,27 @@ Then open the local URL printed in the terminal.
 
 ## Project Structure
 
+Current top-level layout:
+
 ```text
 la-tanda-web/
-├── *.html                 # Main public pages and app entry points
+├── *.html                 # Public pages and app entry points
+├── *.js                   # Frontend scripts and API proxy files
 ├── assets/                # Shared static assets
-├── html/                  # HTML-only API proxy and generated assets
-├── packages/sdk/          # TypeScript SDK and tests
-├── translations/          # i18n message files
-├── utils/                 # Shared utility scripts
-├── workflows/             # CI/CD automation
-├── *.js                   # Root-level frontend scripts and proxies
-└── README.md              # Project overview and developer onboarding
+├── chain/                 # Chain-related resources
+├── components/            # Reusable UI pieces
+├── css/                   # Stylesheets
+├── html/                  # HTML-only API proxy assets
+├── images/, img/, avatars/ # Media assets
+├── middleware/            # Middleware helpers
+├── negocio/, group/, packages/, translations/, utils/, workflows/
+└── docs/                  # Documentation assets already in the repo
 ```
 
 Key files:
 - `marketplace-social.js` lives at the **HTML root**.
 - The main API file is `api-proxy-enhanced.js`.
+- `CONTRIBUTING.md` is not present in this snapshot, so this summary reflects the actual repo contents.
 
 ---
 
